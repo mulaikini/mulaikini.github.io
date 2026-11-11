@@ -87,6 +87,9 @@ const PRODUCTS = [
   { id:"02", name:"Ravelle Lumen Mosquito Trap", cat:"Anti Nyamuk", art:"trap", bg:"--sun",
     why:"Perangkap tanpa racun & asap: lampu UV 365/395 nm memancing nyamuk, kipas menyedotnya ke wadah. Jangkauan 20 m², ada mode otomatis, garansi 2 tahun. Status pre-order (±15 hari).", price:"",
     video:"Fakta Rumah: kenapa raket kalah?", link:"https://s.shopee.co.id/7pubDB81nO" },
+  { id:"03", name:"CLUB Kids Station Rak Mainan", cat:"Organizer", art:"rack", bg:"--pink",
+    why:"Rak setinggi anak (30×34×79 cm): 2 keranjang tarik yang bisa dibuka balita sendiri + lemari berpintu di atas untuk simpanan rotasi mainan.", price:"",
+    video:"Fakta Rumah: 5 menit kemudian, berantakan lagi", link:"https://s.shopee.co.id/9pfnVRMZSH" },
 ];
 
 const CATS = ["Semua","Kualitas Udara","Anti Nyamuk","Dapur & MPASI","Baby-proofing","Hemat Listrik","Organizer","Laundry & Bayi","Rutinitas Pagi"];
@@ -94,6 +97,7 @@ const CATS = ["Semua","Kualitas Udara","Anti Nyamuk","Dapur & MPASI","Baby-proof
 /* Ilustrasi sederhana gaya mulaikini (garis tebal, warna lembut) */
 const S = 'stroke="#2E2A27" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"';
 const ART = {
+  rack:`<svg viewBox="0 0 100 100"><circle cx="35" cy="14" r="6" fill="#fff" ${S}/><circle cx="65" cy="14" r="6" fill="#fff" ${S}/><rect x="28" y="14" width="44" height="80" rx="5" fill="#fff" ${S}/><rect x="33" y="22" width="34" height="30" rx="3" fill="#fff" ${S}/><path d="M33 58 h34 l-2 15 h-30z" fill="#F2B8C6" ${S}/><path d="M33 76 h34 l-2 15 h-30z" fill="#C9B8F5" ${S}/></svg>`,
   trap:`<svg viewBox="0 0 100 100"><rect x="30" y="14" width="40" height="72" rx="12" fill="#fff" ${S}/><path d="M38 14 q12 -10 24 0" fill="none" ${S}/><rect x="34" y="20" width="32" height="8" rx="3" fill="#2E2A27"/><g stroke="#B9B2A6" stroke-width="2">${[0,1,2,3,4,5].map(i=>`<line x1="34" y1="${58+i*4}" x2="66" y2="${58+i*4}"/>`).join("")}</g><circle cx="50" cy="40" r="7" fill="#B9A4E8" opacity=".85"/><circle cx="50" cy="40" r="13" fill="#B9A4E8" opacity=".25"/></svg>`,
   dehum:`<svg viewBox="0 0 100 100"><rect x="30" y="12" width="40" height="76" rx="10" fill="#fff" ${S}/><path d="M36 20h28M36 25h28" ${S}/><rect x="30" y="56" width="40" height="32" rx="0" fill="#BFD7E8" opacity=".6"/><path d="M30 56h40" ${S}/><path d="M50 62c-3 4-4 6-4 8a4 4 0 0 0 8 0c0-2-1-4-4-8z" fill="#fff" ${S} stroke-width="2"/><circle cx="50" cy="44" r="2.5" fill="#6E8F68"/></svg>`,
   brush:`<svg viewBox="0 0 100 100"><rect x="44" y="40" width="12" height="50" rx="6" fill="#fff" ${S}/><path d="M50 8v34" ${S}/><g ${S}><path d="M40 14h20M38 20h24M38 26h24M40 32h20"/></g><circle cx="50" cy="80" r="3" fill="#2E2A27"/></svg>`,
